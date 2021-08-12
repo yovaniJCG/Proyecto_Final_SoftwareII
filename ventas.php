@@ -114,11 +114,11 @@ $resultado = $total_dinero->fetchAll(PDO::FETCH_OBJ);
         </tbody>
       </table>
     </div>
-	     <?php foreach ($resultado as $total_d) {
-    } ?>
+	    <?php foreach ($resultado as $total_d) { ?>
     <div class="total_todas_ventas">
       <p>Total en todas las ventas : <?php echo $total_d->total_todas_ventas ?></p>
     </div>
+    <?php  } ?>
   </section>
 
 
