@@ -1,5 +1,16 @@
 /* end secciones general */
-
+.total_todas_ventas {
+  position: fixed;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 1rem;
+  /* margin-top: 1rem; */
+  padding: 1rem;
+  background-color: rgb(51, 126, 51);
+  color: #fff;
+  border-radius: 3%;
+  border: 1px solid #eecf27;
+}
 /* emcabezado */
 .header {
   position: fixed;
