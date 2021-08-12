@@ -1,0 +1,294 @@
+/* end secciones general */
+
+/* emcabezado */
+.header {
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  z-index: 999;
+  background-color: #000;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid blue;
+  text-indent: 9999px;
+  background: transparent url("../images/bodega.svg") no-repeat left;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  border: 1px solid red;
+}
+
+.menu {
+  font-weight: 700;
+}
+
+/* HOME */
+.allvh {
+  min-height: 100vh;
+  /* background-color: skyblue; */
+}
+
+.home {
+  background-color: rgb(134, 122, 134);
+  /* background: transparent url("../images/ultima.jpg") no-repeat center;
+  background-size: contain;
+  background-attachment: fixed; */
+}
+
+.arti {
+  cursor: pointer;
+  margin-top: 12rem;
+  /* background-color: aqua; */
+}
+
+/* .fig {
+  background-color: brown;
+} */
+
+/* end emcabezado */
+
+.fixed-top {
+  padding-top: 0rem;
+}
+
+.titulo {
+  font-size: 13vw;
+  font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+}
+
+.parra {
+  font-family: cursive, sans-serif;
+  letter-spacing: 1vw;
+  color: rgb(23, 23, 156);
+}
+
+.titu {
+  cursor: pointer;
+}
+
+.titu h1 {
+  letter-spacing: 1vw;
+}
+
+.titu:hover .titulo {
+  transform: scale(1.1);
+}
+
+img svg {
+  width: 100%;
+  height: 100%;
+}
+
+.irabajo i {
+  width: 20%;
+  margin-top: -8px;
+  font-size: 35px;
+  font-weight: 900;
+  color: rgb(241, 23, 34);
+
+  animation-name: parpadeos;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.irabajo i:hover {
+  transform: scale(1.1);
+}
+
+/* SECCION 2 */
+.tablero {
+  display: block;
+  padding: 1rem;
+  padding-top: 7rem;
+  /* background-color: rgb(221, 241, 241); */
+  background-color: #fff;
+}
+
+.tablero .titulo {
+  position: relative;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+  font-family: "Ubuntu", sans-serif;
+
+  /* color: #000;
+  font-size: 2rem;*/
+}
+
+.tablero .titulo::before {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.tablero .titulo::after {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  font-size: 20px;
+  font-family: cursive;
+  color: blue;
+  padding: 4px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.tablero .titulo::after {
+  content: "System";
+}
+
+.tablero .sec2 {
+  margin: auto;
+  text-align: center;
+  /* background-color: rgb(221, 241, 241); */
+}
+
+.sec2 a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
+.tablero figure {
+  background-color: rgb(134, 122, 134);
+  /* background-color: brown; */
+  margin-top: 1rem;
+  border-radius: 6%;
+  transition: all ease 0.3s;
+}
+
+.tablero figure:hover {
+  transition: all 0.3s ease-out;
+  background-color: rgb(153, 90, 153);
+}
+.tablero a figcaption {
+  padding: 1rem;
+  font-weight: 800;
+  background-color: #eecf27;
+}
+
+.tablero figure:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
+
+.tablero img {
+  max-width: 80%;
+  height: 200px;
+  padding: 1rem;
+}
+/* *********** */
+
+@media screen and (min-width: 20em) {
+  .arti {
+    margin-top: 8.5rem;
+    /* background-color: rgb(252, 106, 39); */
+  }
+
+  .titulo {
+    font-size: 12vw;
+  }
+
+  .tablero img {
+    max-width: 90%;
+    height: 200px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .arti {
+    margin-top: 8.5rem;
+    /* background-color: rgb(252, 39, 110); */
+  }
+
+  .fixed-top {
+    padding-top: 4rem;
+  }
+
+  .tablero .sec2 {
+    text-align: center;
+  }
+
+  .tablero img {
+    max-width: 60%;
+    height: 200px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .arti {
+    margin-top: 12rem;
+    /* background-color: rgb(252, 39, 110); */
+  }
+
+  .titulo {
+    font-size: 5vw;
+  }
+
+  .tablero img {
+    max-width: 70%;
+    height: 200px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .arti {
+    margin-top: 8.5rem;
+    /* background-color: rgb(192, 177, 39); */
+  }
+
+  .titulo {
+    font-size: 5vw;
+  }
+
+  /* .home {
+    background-color: rgb(98, 116, 19);
+    /* background: transparent url("../images/ultima.jpg") no-repeat center;
+  background-size: contain;
+  background-attachment: fixed; 
+  } */
+}
+
+@keyframes parpadeos {
+  0% {
+    opacity: 1;
+    color: rgb(5, 92, 24);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* .batman div{
+  order: 1;
+}
+
+.batman aside{
+  order: 0;
+} */

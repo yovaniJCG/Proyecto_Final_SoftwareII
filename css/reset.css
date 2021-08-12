@@ -1,0 +1,234 @@
+html {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-family: 16px;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%; /*para internet explore*/
+  -moz-text-size-adjust: 100%; /*para firefox*/
+  -webkit-text-size-adjust: 100%; /*para navegadores basados en webkit*/
+  text-size-adjust: 100%;
+  background-color: #fff;
+  color: #000;
+  list-style: none;
+}
+
+[id] {
+  scroll-margin-top: 10ex;
+}
+/*para el contenido que se desvorde de una caja usamos aqui si se va a pasar mas del 100% de lo ancho del body en tonces no se va mostrar en otras palabras estoy  bloqueando la barra horizontal*/
+* {
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  -ms-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(139, 34, 95, 0.8);
+  border: 1px solid rgb(51, 6, 250);
+  /* border-radius: 6px; */
+  box-shadow: 0 1px 1px rgba(27, 3, 240, 0.075) inset,
+    0 0 8px rgba(21, 5, 253, 0.6);
+  outline: 0 none;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="dateti"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="sea"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  border: 1px solid rgb(201, 240, 31);
+  /* border-radius: 6px; */
+  outline: 0 none;
+}
+
+a {
+  text-decoration: none;
+  color: #369681;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+h1 {
+  font-size: 32px; /*esto para los navegadores que no me soprtan el rem*/
+  font-size: 2rem;
+}
+h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+h5,
+a,
+abbr,
+b,
+code,
+dfn,
+em,
+i,
+li,
+mark,
+p,
+pre,
+strong {
+  font-size: 16px;
+  font-size: 1rem;
+}
+h6,
+small {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+li {
+  margin-left: 16px;
+  margin-left: 1rem;
+  list-style-type: inherit;
+  list-style-position: inside;
+}
+
+abbr,
+dfn,
+em,
+i {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+code,
+pre {
+  font-family: monospace;
+}
+
+mark {
+  background-color: yellow;
+}
+
+hr {
+  margin: 16px auto;
+  margin: 1rem auto;
+  width: 100%;
+  border: thin solid #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+summary {
+  display: block;
+}
+
+/* table {
+  border-collapse: collapse;
+} */
+
+audio,
+canvas,
+img,
+iframe,
+picture,
+progress,
+svg,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+optgroup,
+option,
+select,
+textarea {
+  padding: 8px;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 16px;
+  font-size: 1rem;
+  border: thin solid #000;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="checkbox"],
+input[type="radio"],
+label,
+select {
+  cursor: pointer;
+}
+
+*[disabled] {
+  /*a todas las propiedades que tengan disabled*/
+  cursor: default;
+  color: #999;
+  background-color: #ddd;
+}
+textarea {
+  resize: none;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #ccc;
+}
+
+::selection {
+  color: #fff;
+  background-color: #ccc;
+}

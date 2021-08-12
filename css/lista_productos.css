@@ -1,0 +1,170 @@
+html {
+  font-size: 16px;
+  background-color: #ccc;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(139, 34, 95, 0.8);
+  border: 1px solid rgb(51, 6, 250);
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(27, 3, 240, 0.075) inset,
+    0 0 8px rgba(21, 5, 253, 0.6);
+  outline: 0 none;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="dateti"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="sea"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  border: 1px solid rgb(201, 240, 31);
+  border-radius: 6px;
+  outline: 0 none;
+}
+
+.for {
+  width: 80%;
+  height: auto;
+  /* background-color: darkcyan; */
+  margin: auto;
+  padding: 2rem;
+}
+
+.for h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(12, 11, 11);
+}
+
+form,
+h1 {
+  margin: 1rem;
+  padding: 0 10px;
+}
+
+.for h1 i {
+  font-size: 35px;
+  color: rgb(3, 104, 3);
+}
+
+.for .inp {
+  width: 97%;
+  height: 45px;
+  /* margin: 1rem 0; */
+  font-size: 17px;
+  padding: 0 15px;
+
+  opacity: 0.8;
+  border: 1.5px solid rgb(130, 131, 127);
+}
+
+.for label {
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+}
+
+.for .text {
+  width: 97%;
+  height: 180px;
+
+  font-size: 17px;
+  padding: 0 15px;
+  padding-top: 18px;
+  border: 0;
+}
+
+.for .boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  width: 40%;
+  height: 50px;
+  margin: 1rem 0;
+  /* background-color: cyan; */
+}
+
+.for .boton button {
+  width: 46%;
+  height: 100%;
+  border: 2px solid rgb(8, 61, 25);
+  background-color: rgb(12, 105, 54);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.for .boton .canse {
+  width: 46%;
+  height: 100%;
+  border: 2px solid rgb(109, 5, 5);
+  background-color: rgb(180, 26, 26);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.for .boton .canse a {
+  color: #fff;
+}
+
+.for .boton .canse:hover a {
+  color: rgb(22, 21, 21);
+  background: none;
+}
+
+.for .boton button:hover {
+  color: rgb(27, 26, 26);
+  background: none;
+}
+
+.for .regresar {
+  width: 100px;
+  background-color: rgb(180, 26, 26);
+  color: #fff;
+  padding: 1rem;
+  font-size: 20px;
+}
+.for .regresar a i {
+  color: #fff;
+  font-size: 20px;
+}

@@ -1,0 +1,218 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+  background-color: darkgrey;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(139, 34, 95, 0.8);
+  border: 1px solid rgb(57, 6, 240);
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(6, 22, 250, 0.075) inset,
+    0 0 8px rgba(21, 5, 243, 0.6);
+  outline: 0 none;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="dateti"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="sea"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  border: 1px solid rgb(5, 75, 69);
+  border-radius: 6px;
+  outline: 0 none;
+}
+
+/************seccion**************/
+
+.secventas {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: darkgrey;
+  /* background-color: rgb(253, 208, 166); */
+}
+
+.secventas .max-width {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 8rem 80px;
+  /* background-color: blue; */
+}
+
+.secventas .max-width span {
+  font-weight: 700;
+  color: rgb(37, 17, 75);
+  font-size: 30px;
+}
+
+.secventas .max-width i {
+  font-weight: 700;
+  color: rgb(4, 116, 22);
+  font-size: 30px;
+}
+
+.secventas .max-width .buscador .label {
+  font-size: 20px;
+}
+/************buscador************/
+.buscador {
+  margin-top: 2rem;
+}
+
+.inp {
+  width: 100%;
+  height: 45px;
+  /* margin: 1rem 0; */
+  font-size: 17px;
+  padding: 0 15px;
+  border: 0;
+}
+
+/*************************************************/
+.secventas .max-width .con {
+  margin-top: 2rem;
+  max-width: 100%;
+  /* height: 50vh; */
+  /* background-color: aqua; */
+}
+.secventas .max-width .con table {
+  width: 100%;
+  border: thin solid rgb(35, 36, 34);
+}
+
+.secventas .max-width .con table tbody tr td {
+  text-align: center;
+  font-size: 18px;
+}
+
+.secventas .max-width .con table thead th {
+  background-color: cadetblue;
+}
+
+.secventas .max-width .con table tbody tr td .elimina {
+  margin: 5px;
+  padding: 1rem;
+  color: #fff;
+  font-size: 15px;
+  background-color: rgb(204, 55, 55);
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.secventas .max-width .con table tbody tr td .elimina:hover {
+  background-color: rgb(230, 8, 8);
+}
+
+/****************botones*******************/
+.secventas .max-width .boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  width: 35%;
+  height: 50px;
+  margin: 2rem 0;
+
+  /* background-color: royalblue; */
+}
+
+.secventas .max-width button {
+  width: 40%;
+  height: 100%;
+  border: 2px solid rgb(8, 61, 25);
+  background-color: rgb(12, 105, 54);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 2s ease;
+}
+
+.secventas .max-width .boton .terminar {
+  padding: 0.5rem;
+  color: #fff;
+  background-color: rgb(20, 139, 20);
+  font-size: 18px;
+}
+
+.secventas .max-width .boton .canse {
+  width: 40%;
+  color: #fff;
+  text-align: center;
+  line-height: 245%;
+  background-color: crimson;
+  border: 2px solid red;
+  border: 2px solid rgb(8, 61, 25);
+  border-radius: 6px;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+/* ALERTS************************************ */
+.alert {
+  max-width: 1300px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(156, 156, 36);
+  border-radius: 3%;
+}
+
+.alert i {
+  font-size: 15px;
+}
+.alert-caselar {
+  max-width: 1300px;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 3%;
+  color: #000;
+  background-color: rgb(62, 158, 58);
+}
