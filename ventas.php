@@ -4,6 +4,10 @@ include_once "base_de_datos.php";
 $sentencia = $base->query("SELECT ventas.total, ventas.fecha, ventas.id, GROUP_CONCAT(	productos.codigo, '..',  productos.descripcion, '..', productos_vendidos.cantidad SEPARATOR '__') AS productos FROM ventas INNER JOIN productos_vendidos ON productos_vendidos.id_venta = ventas.id INNER JOIN productos ON productos.id = productos_vendidos.id_producto GROUP BY ventas.id ORDER BY ventas.id;");
 $ventas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 ?>
+<?php 
+$total_dinero= $base->query(" SELECT SUM(total) AS total_todas_ventas FROM ventas");
+$resultado = $total_dinero->fetchAll(PDO::FETCH_OBJ);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -109,6 +113,11 @@ $ventas = $sentencia->fetchAll(PDO::FETCH_OBJ);
           <?php } ?>
         </tbody>
       </table>
+    </div>
+	     <?php foreach ($resultado as $total_d) {
+    } ?>
+    <div class="total_todas_ventas">
+      <p>Total en todas las ventas : <?php echo $total_d->total_todas_ventas ?></p>
     </div>
   </section>
 
